@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+    <body>
+        <div class="middlestuff">
+            <div class="middlemiddle">
+                <h1>{{error}}</h1>
+                <h2>SAVE THE SQUIRRELS <span id="heart">❤️</span> FROM DROWNING!</h2>
+                <br>
+                <h3>We need your support!
+                    <br>
+                    <br>
+                    <h3>
+                    Fatal emergencies are happening before our eyes, and the world just keeps watching.
+                    <br>
+                    We need your signature for the new squirrel protection act:
+                    <br>
+                    <br>
+                    <ul>
+                        <li>Mandatory squirrel ladders attached to every rainwater barrel!</li>
+                        <br>
+                        <li>Mandatory squirrel food in every birdseed house!</li>
+                        <br>
+                        <li>Stop deforestation, especially the logging of mixed forest!</li>
+                    </ul>
+                </h3>
+                <br>
+                <br>
+                <h3>All you have to do is insert your name below and provide your signature inside the field.</h3>
+                <br>
+                <br>
+                <br>
+                <form method="post">
+                    <input type="hidden" id="sig" name="sig">
+                    <br>
+                    <br>
+                    <canvas width=800 height=500 id="canvas"></canvas>
+                    <br>
+                    <br>
+                    <button name="button">SUBMIT</button>
+                    <input type="hidden" name="_csrf" value={{csrfToken}}>
+                </form>
+            </div>
+        </div>
+
+        <!-- {{#if error}}
+        <div class="error">Oh noes! something went wrong. Please try again!</div>
+        {{/if}} -->
+
+        <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+        <script src="./script.js" charset="utf-8"></script>
+    </body>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+    <body>
+        <div class="middlestuff">
+            {{#if deleted}}
+            {{> signatureDeleted}}
+            {{/if}}
+
+            {{#if thanks}}
+            <div class="middlemiddle">
+                <h1>Thank you!!</h1>
+                <br>
+                <img src="{{sigimage}}">
+                <br>
+                <br>
+                <br>
+                <br>
+                <br>
+                <h2>
+                    Please click here to see a list of <a href="/signers">all signatories</a>.
+                </h2>
+            </div>
+            {{/if}}
+        </div>
+
+    </body>

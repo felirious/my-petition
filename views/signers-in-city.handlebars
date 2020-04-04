@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+    <body>
+        <div class="middlestuff">
+            <div class="middlemiddle">
+                <h2>Famous signers from <em>{{city}}</em>:</h2>
+                <br>
+                <br>
+                {{#rows}}
+                    <ul>
+                        <li><a href='{{homepage}}'>{{first}} {{last}}</a>, <a href='/{{city}}'>{{city}}</a>, {{age}}
+                        </li>
+                    </ul>
+                {{/rows}}
+            </div>
+        </div>
+    </body>

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+    <body>
+        <div class="middlestuff">
+            {{#if err}}
+                {{> errorMessage}}
+            {{/ if}}
+            <div class="middlemiddle">
+                {{#if success}}
+                {{> profileEdited }}
+                {{/if}}
+
+                {{#if error}}
+                {{> errorMeessage }}
+                {{/if}}
+
+                {{#if edit}}
+                <h1>In order to update your profile, please fill out the fields accordingly:</h1>
+                <br>
+                <h4>(Please make sure your homepage starts with "http://" or "https://"!)</h4>
+                <br>
+
+
+                <form method="post">
+                    {{#if info}}
+                    {{#info}}
+                    <input type="text" {{#if first}} value={{first}} {{/if}} name="first" placeholder="Your first name">
+                    <br>
+                    <input type="text" {{#if last}} value={{last}} {{/if}} name="last" placeholder="Your last name">
+                    <br>
+                    <input type="text" {{#if email}} value={{email}} {{/if}} name="email" placeholder="Your email address">
+                    <br>
+                    <input type="password" name="password" placeholder="Your password">
+                    <br>
+                    <input type="text" {{#if age}} value={{age}} {{/if}} name="age" placeholder="How old are you?">
+                    <br>
+                    <input type="text" {{#if city}} value={{city}} {{/if}} name="city" placeholder="Which city are you from?">
+                    <br>
+                    <input type="text" {{#if homepage}} value={{homepage}} {{/if}} name="homepage" placeholder="Your homepage">
+                    <br>
+                    <button type="submit" name="button">SUBMIT</button>
+                    {{/info}}
+                    {{/if}}
+                    <input type="hidden" name="_csrf" value={{csrfToken}}>
+                </form>
+
+                <br>
+                {{/if}}
+                <p>If you've decided you no longer want to support this noble cause, you may also delete your signature altogether. Sorry!</p>
+                <br>
+                <form method="POST" action="/signature/delete">
+                    <input type="hidden" name="_csrf" value="{{csrfToken}}">
+                    <button type="submit">DELETE SIGNATURE</button>
+                </form>
+                <br>
+            </div>
+            <!-- <form method="post" action="index.html" method="post">
+                <button type="submit" name="delete">DELETE SIGNATURE</button>
+            </form> -->
+        </div>
+    </body>

@@ -1,0 +1,192 @@
+* {
+    font-family: "Raleway", sans-serif;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    display: grid;
+    grid-template-columns: 400px 100px 1fr;
+    grid-template-rows: 150px 50px 1800px 50px;
+    background-color: #ffffe0;
+    /* background-image: url("./geometric-leaves.png"); */
+    border: 2px solid lightgrey;
+}
+
+header {
+    grid-column: 1 / -1;
+    grid-row: 1;
+    background-color: #f0fff0;
+    color: darkgrey;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    font-size: 55px;
+}
+
+footer {
+    grid-column: 1 / -1;
+    grid-row: -1;
+    background-color: black;
+    color: white;
+}
+
+.sidebar {
+    grid-column: 1;
+    grid-row: 2 / -1;
+    background-color: #f0fff0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+input {
+    height: 45px;
+    font-size: 25px;
+    margin-bottom: 20px;
+}
+
+#spiced-image {
+    float: left;
+}
+
+.middlestuff {
+    padding-top: 30px;
+    grid-column: 3 / -1;
+    grid-row: 3 / -2;
+    border-radius: 25px;
+    display: grid;
+    grid-template-rows: 1fr 500px;
+    grid-template-columns: 1fr 500px 50px;
+}
+
+button {
+    height: 45px;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 55px;
+}
+
+h3 {
+    font-size: 30px;
+}
+
+#canvas {
+    border: 5px solid black;
+}
+
+#arrow {
+    height: 100px;
+}
+
+#drowning {
+    width: 199px;
+    height: 199px;
+    border-radius: 100%;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    position: absolute;
+    top: 253px;
+    left: 101.5px;
+}
+
+#save {
+    height: 400px;
+}
+
+#forbidden {
+    width: 300px;
+    height: 300px;
+    position: relative;
+    top: 100px;
+    z-index: 1;
+}
+
+#arrow {
+    position: relative;
+    top: 150px;
+}
+
+#heart {
+    font-size: 150px;
+}
+
+ul {
+    font-size: 45px;
+}
+
+#login:link {
+    text-decoration: none;
+    color: black;
+}
+
+#login:hover {
+    text-decoration: none;
+    color: black;
+}
+
+.middlemiddle {
+    grid-column: 1;
+    grid-rows: 1;
+}
+
+#save-logo {
+    grid-row: 2;
+    grid-column: 2;
+}
+
+.navbar {
+    grid-row: 2;
+    grid-column: 2 / -1;
+    background-color: lightgrey;
+    color: black;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.navbar div {
+    height: 100%;
+    border-right: solid 1px white;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+a.navlink:link {
+    text-decoration: none;
+    color: black;
+    right: 20px;
+    justify-content: center;
+    justify-self: center;
+    padding-right: 10px;
+    margin-right: 10px;
+}
+
+a.navlink:visited {
+    text-decoration: none;
+    color: black;
+    right: 20px;
+    justify-content: center;
+    justify-self: center;
+    padding-right: 10px;
+    margin-right: 10px;
+}
+
+#logout {
+    border: none;
+}
+
+#error {
+    width: 600px;
+    height: 500px;
+    background-color: red;
+    color: black;
+    border-radius: 25px;
+    border: 2px solid black;
+    display: flex;
+    padding: 20px;
+}

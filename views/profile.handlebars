@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+    <body>
+        <div class="middlestuff">
+            <div class="middlemiddle">
+
+                <h1>Please provide some additional information below:</h1>
+                <br>
+                <h4>(Please make sure your homepage starts with "http://" or "https://"!)</h4>
+                <br>
+                <form method="post">
+                    <input type="text" name="age" placeholder="How old are you?">
+                    <br>
+                    <input type="text" name="city" placeholder="Which city are you from?">
+                    <br>
+                    <input type="text" name="homepage" placeholder="Your homepage">
+                    <br>
+                    <button type="submit" name="button">SUBMIT</button>
+                    <input type="hidden" name="_csrf" value={{csrfToken}}>
+                </form>
+            </div>
+        </div>
+    </body>
